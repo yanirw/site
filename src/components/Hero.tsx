@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <Box
       sx={{
-        minHeight: '70vh',
+        minHeight: '78vh',
         display: 'flex',
         alignItems: 'center',
         background: 'linear-gradient(135deg, #4B0082 0%, #FF6B6B 50%, rgb(96, 203, 169) 100%)',
