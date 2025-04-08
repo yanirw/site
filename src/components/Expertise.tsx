@@ -31,9 +31,10 @@ const Expertise = () => {
     <Box
       sx={{
         bgcolor: '#0A0A0A',
-        py: 6,
+        py: 4,
         position: 'relative',
-        zIndex: 1
+        zIndex: 1,
+        mt: -8
       }}
     >
       <Container maxWidth="lg">

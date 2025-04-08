@@ -1,18 +1,19 @@
 import React from 'react';
 import { Box, Container, Typography, Button, Stack } from '@mui/material';
-import { GitHub, LinkedIn, Description } from '@mui/icons-material';
+import { GitHub, LinkedIn } from '@mui/icons-material';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
     <Box
       sx={{
-        minHeight: '100vh',
+        minHeight: '70vh',
         display: 'flex',
         alignItems: 'center',
         background: 'linear-gradient(135deg, #4B0082 0%, #FF6B6B 50%, rgb(96, 203, 169) 100%)',
         position: 'relative',
         overflow: 'hidden',
+        pt: 4
       }}
     >
       {/* Gradient overlay */}
@@ -28,7 +29,7 @@ const Hero = () => {
         }}
       />
 
-      <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+      <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -107,25 +108,6 @@ const Hero = () => {
                 }}
               >
                 GitHub
-              </Button>
-              <Button
-                variant="outlined"
-                startIcon={<Description />}
-                href="/yanir_winnik_cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                  color: '#FFFFFF',
-                  borderColor: 'rgba(255, 255, 255, 0.3)',
-                  backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                  backdropFilter: 'blur(5px)',
-                  '&:hover': {
-                    borderColor: 'rgba(255, 255, 255, 0.5)',
-                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                  },
-                }}
-              >
-                CV
               </Button>
             </Stack>
           </Box>

@@ -93,7 +93,34 @@ const Navbar = () => {
                 <Button
                   key={item.name}
                   onClick={() => scrollTo(item.href)}
-                  sx={{ color: 'text.primary' }}
+                  sx={{ 
+                    color: 'text.primary',
+                    fontSize: '1.1rem',
+                    fontWeight: 500,
+                    mx: 1,
+                    px: 2,
+                    py: 1,
+                    borderRadius: 1,
+                    transition: 'all 0.2s ease-in-out',
+                    '&:hover': {
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                      transform: 'translateY(-2px)',
+                    },
+                    '&::after': {
+                      content: '""',
+                      position: 'absolute',
+                      bottom: 0,
+                      left: '50%',
+                      width: 0,
+                      height: '2px',
+                      backgroundColor: 'primary.main',
+                      transition: 'all 0.3s ease-in-out',
+                    },
+                    '&:hover::after': {
+                      width: '80%',
+                      left: '10%',
+                    }
+                  }}
                 >
                   {item.name}
                 </Button>
